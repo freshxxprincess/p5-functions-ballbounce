@@ -10,15 +10,7 @@ function setup(){
 
 function draw(){
     background(0);
-
-    //display ball
-    stroke(255);
-    strokeWeight(4);
-    fill(50,250,50);
-    ellipse(x, y, 50, 50);
-
-    
-    //make ball move
+   //make ball move
     y = y + speedy;
     x = x + speedx;
     
@@ -28,5 +20,15 @@ function draw(){
     }
      if(y>400 || y<0){
         speedy = -speedy;
-    }
+     }
+       //display ball
+    stroke(255);
+    strokeWeight(4);
+    fill(50,250,50);
+    ellipse(x, y, 50, 50);
+    
+}
+
+function display(){
+
 }
